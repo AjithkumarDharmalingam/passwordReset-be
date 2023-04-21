@@ -88,7 +88,7 @@ router.post('/sendpasswordlink',async(req,res)=>{
     from:'ajithkumarfsd97@gmail.com',
     to:`${email}`,
     subject:"Sending Email For password Reset",
-    text:`This Link Valid For 30 MINUTES http://localhost:3000/forgotpassword/${user.id}/${setuserToken.token}`
+    text:`This Link Valid For 30 MINUTES https://dynamic-beignet-22a6ac.netlify.app/forgotpassword/${user.id}/${setuserToken.token}`
 }
 
 transporter.sendMail(mailOptions,(error,info)=>{
